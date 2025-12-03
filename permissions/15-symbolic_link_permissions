@@ -1,2 +1,9 @@
 #!/bin/bash
-chown -h vincent:staff  _hello/
+cd /tmp                     
+nano 15-symbolic_link_permissions  
+chmod +x 15-symbolic_link_permissions 
+touch hello                  
+ln -s hello _hello           
+./15-symbolic_link_permissions  
+ls -l _hello                 
+
